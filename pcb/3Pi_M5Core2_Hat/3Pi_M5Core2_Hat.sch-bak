@@ -1,0 +1,191 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J2
+U 1 1 622E82BA
+P 7350 1700
+F 0 "J2" H 7308 2110 45  0000 C CNN
+F 1 "5v_3Pi" H 7308 2026 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7350 2000 20  0001 C CNN
+F 3 "" H 7350 1700 50  0001 C CNN
+F 4 "CONN-09863" H 7308 1931 60  0000 C CNN "Field4"
+	1    7350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J4
+U 1 1 622E8999
+P 7750 4350
+F 0 "J4" H 7708 4760 45  0000 C CNN
+F 1 "I2C_3Pi" H 7708 4676 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7750 4650 20  0001 C CNN
+F 3 "" H 7750 4350 50  0001 C CNN
+F 4 "CONN-09863" H 7708 4581 60  0000 C CNN "Field4"
+	1    7750 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 622F2E84
+P 5650 4350
+F 0 "#PWR0102" H 5650 4100 50  0001 C CNN
+F 1 "GND" H 5655 4177 50  0000 C CNN
+F 2 "" H 5650 4350 50  0001 C CNN
+F 3 "" H 5650 4350 50  0001 C CNN
+	1    5650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 623A2F33
+P 8050 1150
+F 0 "#PWR07" H 8050 1000 50  0001 C CNN
+F 1 "+5V" H 8065 1323 50  0000 C CNN
+F 2 "" H 8050 1150 50  0001 C CNN
+F 3 "" H 8050 1150 50  0001 C CNN
+	1    8050 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1700 7450 1600
+$Comp
+L power:GND #PWR010
+U 1 1 623AA5E6
+P 9450 1700
+F 0 "#PWR010" H 9450 1450 50  0001 C CNN
+F 1 "GND" H 9455 1527 50  0000 C CNN
+F 2 "" H 9450 1700 50  0001 C CNN
+F 3 "" H 9450 1700 50  0001 C CNN
+	1    9450 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 1700 8850 1700
+Wire Wire Line
+	8850 1600 8850 1700
+Connection ~ 8850 1700
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J3
+U 1 1 622E6D83
+P 8750 1700
+F 0 "J3" H 8708 2110 45  0000 C CNN
+F 1 "GND_3Pi" H 8708 2026 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8750 2000 20  0001 C CNN
+F 3 "" H 8750 1700 50  0001 C CNN
+F 4 "CONN-09863" H 8708 1931 60  0000 C CNN "Field4"
+	1    8750 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR06
+U 1 1 623E6AFB
+P 7150 5200
+F 0 "#PWR06" H 7150 5050 50  0001 C CNN
+F 1 "+5V" H 7165 5373 50  0000 C CNN
+F 2 "" H 7150 5200 50  0001 C CNN
+F 3 "" H 7150 5200 50  0001 C CNN
+	1    7150 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1150 8050 1600
+Connection ~ 7450 1600
+$Comp
+L Switch:SW_Push PWR1
+U 1 1 62C8351B
+P 4650 6650
+F 0 "PWR1" V 4696 6602 50  0000 R CNN
+F 1 "Bttn" V 4605 6602 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 4650 6850 50  0001 C CNN
+F 3 "~" H 4650 6850 50  0001 C CNN
+	1    4650 6650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SparkFun-Connectors:CONN_02JST-PTH-2 J5
+U 1 1 62C8426D
+P 4050 6700
+F 0 "J5" H 4008 7110 45  0000 C CNN
+F 1 "3PI_SWTCH" H 4008 7026 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 7000 20  0001 C CNN
+F 3 "" H 4050 6700 50  0001 C CNN
+F 4 "CONN-09863" H 4008 6931 60  0000 C CNN "Field4"
+	1    4050 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 6450 4400 6450
+Wire Wire Line
+	4400 6450 4400 6600
+Wire Wire Line
+	4400 6600 4150 6600
+Wire Wire Line
+	4650 6850 4400 6850
+Wire Wire Line
+	4400 6850 4400 6700
+Wire Wire Line
+	4400 6700 4150 6700
+Wire Wire Line
+	7450 1600 8050 1600
+Wire Wire Line
+	6350 6200 6700 6200
+Wire Wire Line
+	6250 6200 5800 6200
+Wire Wire Line
+	5800 6200 5800 4950
+Wire Wire Line
+	5650 4350 5650 4250
+Wire Wire Line
+	5800 4950 6050 4950
+Wire Wire Line
+	6550 4150 6550 4050
+$Comp
+L Connector_Generic:Conn_02x15_Top_Bottom J1
+U 1 1 62CF04AF
+P 6250 4750
+F 0 "J1" H 6300 5667 50  0000 C CNN
+F 1 "Conn_02x15_Top_Bottom" H 6300 5576 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 6250 4750 50  0001 C CNN
+F 3 "~" H 6250 4750 50  0001 C CNN
+	1    6250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4950 6550 4950
+Wire Wire Line
+	6700 6200 6700 4950
+Wire Wire Line
+	6050 4050 5900 4050
+Wire Wire Line
+	5900 4050 5900 4250
+Wire Wire Line
+	5900 4450 6050 4450
+Wire Wire Line
+	6050 4250 5900 4250
+Connection ~ 5900 4250
+Wire Wire Line
+	5900 4250 5900 4450
+Wire Wire Line
+	5650 4250 5900 4250
+Wire Wire Line
+	7150 5250 7150 5200
+Wire Wire Line
+	6550 5250 7150 5250
+Wire Wire Line
+	6550 4450 7650 4450
+Wire Wire Line
+	6550 4350 7650 4350
+$EndSCHEMATC
